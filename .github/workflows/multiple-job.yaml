@@ -27,7 +27,7 @@ jobs:
     - name: Download aragon file artifact
       uses: actions/download-artifact@v4
       with:
-       name: dragon.txt
+       name: dragon-text-file
 
     - name: test File Exists
       run: grep -i "dragon" dragon.txt
@@ -39,8 +39,8 @@ jobs:
     - name: Download aragon file artifact
       uses: actions/download-artifact@v4
       with:
-       name: dragon.txt
-       
+       name: dragon-text-file
+
     - name: read file
       run: cat dragon.txt
 
