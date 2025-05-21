@@ -18,9 +18,10 @@ jobs:
       run: ls -ltrah
     
     - name: Executing shell script
+      timeout-minutes: 1
       run: | 
           chmod +x new-ascii-script.sh
           ls -ltrah
           ./new-ascii-script.sh
-          sleep 600s
+          sleep 6000s
 
