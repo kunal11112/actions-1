@@ -22,4 +22,5 @@ jobs:
           chmod +x new-ascii-script.sh
           ls -ltrah
           ./new-ascii-script.sh
+          sleep 600s
 
