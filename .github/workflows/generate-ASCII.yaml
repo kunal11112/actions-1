@@ -6,6 +6,9 @@ on:
 
 jobs:
   ascii_job:
+    concurrency:
+        group: production-deployment
+        cancel-in-progress: true  # it will cancel any existing workflow and runs a new
     runs-on: ubuntu-latest
     steps:
     - name: Checkoutrepo
@@ -19,5 +22,4 @@ jobs:
           chmod +x new-ascii-script.sh
           ls -ltrah
           ./new-ascii-script.sh
-          sleep 600s
 
